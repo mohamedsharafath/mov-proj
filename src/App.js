@@ -5,9 +5,11 @@ import Home from './pages/home/Home';
 import MovieList from './components/movieList/movieList';
 import Movie from './pages/movieDetail/movie';
 
+
 function App() {
   return (
     <div className="App">
+    
         <Router>
           <Header />
             <Routes>
