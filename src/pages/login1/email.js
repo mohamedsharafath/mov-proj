@@ -6,7 +6,7 @@ import { TextField, Button } from "@mui/material";
 export const Login = () => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
-    const [done, setDone] = useState(true);
+    const [done, setDone] = useState(false);
     const [eerror,seteerror] = useState(false)
     const [ehelpertext,setehelpertext] = useState('')
     const [perror,setperror] = useState(false)

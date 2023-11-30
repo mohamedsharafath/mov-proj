@@ -21,19 +21,24 @@ a > span{
     font-size: 1.3rem;
     cursor: pointer;
     color: white;
-    transition-property: width;
+    transition: height 0.5s,width 0.5s, color 0.5s;
+    display: inline-block;
 }
 
 a > span:hover {
+   
     color: red;
-    transition-delay: 0.4s; 
-    width: 300px;
+    height: 40px;
+    /* width: 100px; */
 }
 
 .header__icon {
     width: 185px;
     height:100px;   
     cursor: pointer;
+    border-radius: 90%;
+    border-bottom: 80px;
+    block-size: 90px;
 }
 
 .user__avatar {

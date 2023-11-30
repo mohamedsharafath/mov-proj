@@ -2,7 +2,8 @@ import React, {useEffect, useState} from "react"
 import "./movieList.css"
 import { useParams } from "react-router-dom"
 import Cards from "../card/card"
-import SearchBox from "../../pages/SearchBox"
+import SearchBar from "material-ui-search-bar"
+
 
 const MovieList = () => {
     
@@ -42,9 +43,10 @@ const MovieList = () => {
 
     return (
         <>
-        {/* <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} /> */}
-        <input type="text" value={searchValue} onChange={(e) => setSearchValue(e.target.value) }></input>
-        <button onClick={getData}>search</button>
+       <div className="search" style={{ display: 'flex', gap: '20px' }}>
+        <input type="text" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} style={{ borderRadius: '10px', padding: '5px',height:'16px' }}></input>
+        <button onClick={getData} style={{ borderRadius: '20px', padding: '5px 10px', backgroundColor: 'lightblue' }}>Search</button>
+        </div>
         <div className="movie__list">
             
             {done ? <h2 className="list__title">SEARCH RESULTS</h2> :
