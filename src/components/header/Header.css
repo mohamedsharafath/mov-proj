@@ -9,7 +9,11 @@
 .headerLeft, .headerRight {
     display: flex;
     align-items: center;
+    justify-content: center;
 
+}
+.headerLeft Button{
+    margin-left: 620px;
 }
 
 a > span{
@@ -17,14 +21,18 @@ a > span{
     font-size: 1.3rem;
     cursor: pointer;
     color: white;
+    transition-property: width;
 }
 
 a > span:hover {
     color: red;
+    transition-delay: 0.4s; 
+    width: 300px;
 }
 
 .header__icon {
-    width: 80px;
+    width: 185px;
+    height:100px;   
     cursor: pointer;
 }
 

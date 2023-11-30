@@ -26,7 +26,7 @@
     }
   }
   
-  label {
+  /* label {
     text-align: left;
     padding: 0.25rem 0;
   }
@@ -36,19 +36,19 @@
     padding: 1rem;
     border: none;
     border-radius: 10px;
-  }
+  } */
   
-  button {
+  /* button {
     border: none;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
     color: #7439db;
-  }
+  } */
   
-  .link-btn {
+  /* .link-btn {
     background: none;
     color: white;
     text-decoration: underline;
-  }
+  } */

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './email.css'
 import App from "../../App";
 import { TextField, Button } from "@mui/material";
-
+    
 export const Login = () => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
@@ -35,6 +35,7 @@ export const Login = () => {
         {done ? (<App/>) :
         <div className="App1">
         <div className="auth-form-container">
+            
             <h2>Login</h2>
             <form className="login-form" onSubmit={handleSubmit}>
                 <TextField 
@@ -73,7 +74,7 @@ export const Login = () => {
                 <input value={email} onChange={(e) => {setEmail(e.target.value)}}type="email" placeholder="youremail@gmail.com" id="email" name="Email" />
                 <label htmlFor="password">Password</label>
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="Password"  /> */}
-                <Button type="submit" variant="contained">Log In</Button>
+                <Button type="submit" variant="contained" >Log In</Button>
             </form>
             {/* <button className="link-btn" onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here.</button> */}
         </div>
