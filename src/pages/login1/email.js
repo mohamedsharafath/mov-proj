@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import './email.css'
 import App from "../../App";
 import { TextField, Button } from "@mui/material";
-    
+
 export const Login = () => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
-    const [done, setDone] = useState(false);
+    const [done, setDone] = useState(true);
     const [eerror,seteerror] = useState(false)
     const [ehelpertext,setehelpertext] = useState('')
     const [perror,setperror] = useState(false)
@@ -36,7 +36,8 @@ export const Login = () => {
         <div className="App1">
         <div className="auth-form-container">
             
-            <h2>Login</h2>
+            <h1>Login</h1>
+            <h1>Cineview</h1>
             <form className="login-form" onSubmit={handleSubmit}>
                 <TextField 
                 name="Email"
