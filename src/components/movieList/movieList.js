@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import "./movieList.css"
 import { useParams } from "react-router-dom"
 import Cards from "../card/card"
-import SearchBar from "material-ui-search-bar"
+
 
 
 const MovieList = () => {
